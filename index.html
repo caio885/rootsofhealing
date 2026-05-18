@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1265945678977349');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1265945678977349&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <title>Méthode</title>
+  <script type="text/javascript">
+    var s=document.createElement("script");
+    s.src="https://scripts.converteai.net/20a070d6-dd0d-4397-aab3-ecc0fb3a86c2/ab-test/69d88ee175eb915dbf49c32f/player.js";
+    s.async=!0;
+    document.head.appendChild(s);
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      flex: 1;
+      justify-content: center;
+      padding: 40px 20px 20px;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 500px;
+      position: relative;
+    }
+
+
+    .sound-hint {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #555;
+      font-size: 13.5px;
+      letter-spacing: 0.01em;
+    }
+
+    .sound-hint svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 32px 0 18px;
+      color: #999;
+      font-size: 12.5px;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+
+    /* Comments section */
+    .comments-section {
+      width: 100%;
+      max-width: 780px;
+      background: #fff;
+      border: 1px solid #dddfe2;
+      border-radius: 4px;
+      padding: 16px 16px 4px;
+      margin-top: 24px;
+    }
+
+    .comments-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1c1e21;
+      margin-bottom: 14px;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .comment {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .comment-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      object-fit: cover;
+      background: #c8c8c8;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .comment-body {
+      flex: 1;
+    }
+
+    .comment-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #1877f2;
+      font-family: Helvetica, Arial, sans-serif;
+      margin-bottom: 2px;
+    }
+
+    .comment-text {
+      font-size: 13.5px;
+      color: #050505;
+      line-height: 1.5;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .comment-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      font-size: 12px;
+      color: #65676b;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .comment-actions span {
+      cursor: pointer;
+    }
+
+    .comment-actions span:hover {
+      text-decoration: underline;
+    }
+
+    .comment-likes {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: #65676b;
+    }
+
+    .like-icon {
+      width: 16px;
+      height: 16px;
+      background: linear-gradient(135deg, #1877f2 60%, #f02849 100%);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .like-icon svg {
+      width: 10px;
+      height: 10px;
+      fill: #fff;
+    }
+
+    .dot-sep {
+      color: #bcc0c4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <div class="video-container">
+      <vturb-smartplayer id="ab-69d88ee175eb915dbf49c32f" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+    </div>
+
+    <div class="sound-hint">
+      <!-- Speaker icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+      </svg>
+      Assurez-vous que le son est activé
+    </div>
+
+    <!-- Comments Section -->
+    <div class="comments-section">
+      <div class="comments-title">Commentaires des utilisateurs</div>
+
+      <!-- Comment 1 -->
+      <div class="comment">
+        <img class="comment-avatar" src="https://i.postimg.cc/rDZGWy79/Bvjl-MY2004681.jpg" alt="Antoine Garcia">
+        <div class="comment-body">
+          <div class="comment-name">Antoine Garcia</div>
+          <div class="comment-text">Honnêtement, je pensais que ce genre de truc, c'était de l'arnaque, mais bon sang… ça fonctionne vraiment ! En moins d'une semaine, je suis devenu un taureau au lit et je dois dire que je suis TRÈS content du résultat. Ma femme aussi.</div>
+          <div class="comment-actions">
+            <span>J'aime</span>
+            <span>·</span>
+            <span>Répondre</span>
+            <span>·</span>
+            <div class="comment-likes">
+              <div class="like-icon"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg></div>
+              13
+            </div>
+            <span class="dot-sep">·</span>
+            <span>1 h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment 2 -->
+      <div class="comment">
+        <img class="comment-avatar" src="https://i.postimg.cc/v42798C0/Gz-PBFI2125287.jpg" alt="Manuel Rodriguez">
+        <div class="comment-body">
+          <div class="comment-name">Manuel Rodriguez</div>
+          <div class="comment-text">Au début, j'étais sceptique, mais après deux semaines, la différence est incroyable ! Ma confiance est montée en flèche et ma copine l'a clairement remarqué. J'aurais aimé tomber là-dessus plus tôt !</div>
+          <div class="comment-actions">
+            <span>J'aime</span>
+            <span>·</span>
+            <span>Répondre</span>
+            <span>·</span>
+            <div class="comment-likes">
+              <div class="like-icon"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg></div>
+              66
+            </div>
+            <span class="dot-sep">·</span>
+            <span>1 h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment 3 -->
+      <div class="comment">
+        <img class="comment-avatar" src="https://i.postimg.cc/mPp3MZKX/JNjlsy2125287.jpg" alt="Joseph González">
+        <div class="comment-body">
+          <div class="comment-name">Joseph González</div>
+          <div class="comment-text">Je vais pas mentir, j'étais peu sûr de moi depuis des années. Maintenant ? Plus aucune anxiété au moment de passer à l'action. Si vous hésitez, essayez. Vous me remercierez plus tard.</div>
+          <div class="comment-actions">
+            <span>J'aime</span>
+            <span>·</span>
+            <span>Répondre</span>
+            <span>·</span>
+            <div class="comment-likes">
+              <div class="like-icon"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg></div>
+              25
+            </div>
+            <span class="dot-sep">·</span>
+            <span>1 h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment 4 -->
+      <div class="comment">
+        <img class="comment-avatar" src="https://i.postimg.cc/JsY3J7SP/uc-Ngz-A2125287.jpg" alt="François Fernandez">
+        <div class="comment-body">
+          <div class="comment-name">François Fernandez</div>
+          <div class="comment-text">J'étais sur le point de claquer une fortune dans un truc complètement fou, mais j'ai d'abord donné une chance à ça… content de l'avoir fait. Ça m'a pris quelques semaines, mais ma taille et mon endurance sont à un autre niveau. Confiance = 1000%.</div>
+          <div class="comment-actions">
+            <span>J'aime</span>
+            <span>·</span>
+            <span>Répondre</span>
+            <span>·</span>
+            <div class="comment-likes">
+              <div class="like-icon"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg></div>
+              71
+            </div>
+            <span class="dot-sep">·</span>
+            <span>1 h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment 5 -->
+      <div class="comment">
+        <img class="comment-avatar" src="https://i.postimg.cc/75t17Pjt/xobc-Bp2206629.jpg" alt="David Lopez">
+        <div class="comment-body">
+          <div class="comment-name">David Lopez</div>
+          <div class="comment-text">Je n'aurais jamais cru écrire un truc pareil, mais voilà. Je vois vraiment la différence, et c'est pas que moi : ma copine m'a dit franchement qu'elle la sentait aussi. Un vrai changement de jeu !</div>
+          <div class="comment-actions">
+            <span>J'aime</span>
+            <span>·</span>
+            <span>Répondre</span>
+            <span>·</span>
+            <div class="comment-likes">
+              <div class="like-icon"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg></div>
+              19
+            </div>
+            <span class="dot-sep">·</span>
+            <span>1 h</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    Copyright 2025 ®<br>
+    Tous droits réservés
+  </footer>
+
+
+
+</body>
+</html>
